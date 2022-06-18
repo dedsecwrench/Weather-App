@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css?family=Outfit');
+
+body {
+  margin: 0;
+  font-family: Outfit, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cel{
+  font-size: 6rem;
+}
+
+.bold{
+  font-weight: 700;
+}
+
+.date{
+  padding-top: 1rem;
+}
+
+p{
+  font-size: 1.3rem;
+  /* margin-bottom: 1rem; */
+}
+
+h1{
+  font-size: 2rem;
+}
+
+
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100vw;
+  /* border: 1px solid green; */
+}
+
+.display{
+  /* border: 1px solid red; */
+  width: 68%;
+}
+
+.search{
+  /* border: 1px solid rgb(115, 0, 255); */
+  width: 32%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(6px);
+  display: flex;
+  flex-direction: column;
+}
+
+input[type=text]{
+  /* color: black; */
+  position: relative;
+  width: 310px;
+  height: 75px;
+  background-color: transparent;
+  border-bottom: 1px solid rgb(165, 165, 165);
+  /* border: 1px solid red; */
+  font-size: 23px;
+}
+
+input[type=text]:focus{
+  box-shadow: none;
+  outline: none;
+  /* border-bottom: white; */
+  border-bottom: 1px solid  rgb(165, 165, 165);
+}
+
+.top{
+  width: 100%;
+  height: 10%;
+  padding-left: 2.5rem;
+  /* border: 1px solid orange; */
+}
+.bottom{
+  width: 100%;
+  height: 90%;
+  padding: 2.5rem;
+  color: rgb(216, 216, 216);
+  /* border: 1px solid orange; */
+}
+
+.searchicon{
+  width: 85px;
+  height: 75px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgb(253, 143, 0);
+}
+.searchicon:hover{
+  background-color: rgb(232, 132, 1);
+}
+
+.description{
+  top: 72px;
+}
+
+.img{
+  height: 50px;
+  width: 50px;
+  position: relative;
+  bottom: 15px;
+}
+
+.des{
+  bottom: 1.6rem;
+  width: 50px;
+  text-align: center;
+}
+
+.app{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(0,0,0,0.4);
+  color: #fff;
+  animation: fadeIn 2s;
+}
+.app:before{
+  content: '';
+  background: url('https://wallpaperaccess.com/full/175912.jpg') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* z-index: -1; */
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.appClouds{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(0,0,0,0.4);
+  color: #fff;
+  animation: fadeIncloud 3s;
+}
+/* https://i.redd.it/tg3jnc0hdxj41.jpg */
+.appClouds:before{
+  content: '';
+  background: url('https://i.redd.it/tg3jnc0hdxj41.jpg') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+@keyframes fadeIncloud {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIncloud {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.appThunder{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(0,0,0,0.4);
+  color: #fff;
+  animation: fadeInthun 3s;
+}
+.appThunder:before{
+  content: '';
+  background: url('https://www.rmets.org/sites/default/files/cloud%2520to%2520cloud%2520lightning_0.jpg') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* z-index: -1; */
+}
+
+@keyframes fadeInthun {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeInthun {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.appHaze{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(0,0,0,0.4);
+  color: #fff;
+  animation: fadeInhaze 3s;
+}
+.appHaze:before{
+  content: '';
+  background: url('https://www.teahub.io/photos/full/288-2883520_1920x1080-foggy-weather-wallpaper-foggy-wallpaper-4k.jpg') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* z-index: -1; */
+}
+
+@keyframes fadeInhaze {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeInhaze {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.appClear{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(0,0,0,0.4);
+  color: #fff;
+  animation: fadeInclear 3s;
+}
+.appClear:before{
+  content: '';
+  background: url('https://img.freepik.com/free-photo/twilight-cloud_1203-6585.jpg') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* z-index: -1; */
+}
+
+@keyframes fadeInclear {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeInclear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.appRain{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(0,0,0,0.4);
+  color: #fff;
+  animation: fadeInrain 3s;
+}
+.appRain:before{
+  content: '';
+  background: url('https://cdn.wallpapersafari.com/77/95/im4EQ2.jpg') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* z-index: -1; */
+}
+
+@keyframes fadeInrain {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeInrain {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.appSnow{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(0,0,0,0.4);
+  color: #fff;
+  animation: fadeInsnow 3s;
+}
+.appSnow:before{
+  content: '';
+  background: url('https://mobimg.b-cdn.net/v3/fetch/5a/5a52912d498887cdb644b89fabfe4872.jpeg') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* z-index: -1; */
+}
+
+@keyframes fadeInsnow {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeInsnow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.appMist{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(0,0,0,0.4);
+  color: #fff;
+  animation: fadeInmist 3s;
+}
+.appMist:before{
+  content: '';
+  background: url('https://c1.wallpaperflare.com/preview/124/91/824/winding-road-railing-guard-rail.jpg') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* z-index: -1; */
+}
+
+@keyframes fadeInmist {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeInmist {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.appDust{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(0,0,0,0.4);
+  color: #fff;
+  animation: fadeIndust 3s;
+}
+.appDust:before{
+  content: '';
+  background: url('https://images.freecreatives.com/wp-content/uploads/2015/04/Dust-Storm.jpg') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* z-index: -1; */
+}
+
+@keyframes fadeIndust {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIndust {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.appDrizzle{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(0,0,0,0.4);
+  color: #fff;
+  animation: fadeInDrizzle 3s;
+}
+.appDrizzle:before{
+  content: '';
+  background: url('https://webneel.com/wallpaper/sites/default/files/images/09-2018/10-rain-wallpaper-celine-jacqueroud.jpg') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* z-index: -1; */
+}
+
+@keyframes fadeInDrizzle {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeInDrizzle {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.appSquall{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(0,0,0,0.4);
+  color: #fff;
+  animation: fadeInSquall 3s;
+}
+.appSquall:before{
+  content: '';
+  background: url('https://wallpaperaccess.com/full/1096121.jpg') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* z-index: -1; */
+}
+
+@keyframes fadeInSquall {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeInSquall {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.appTornado{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(0,0,0,0.4);
+  color: #fff;
+  animation: fadeInSquall 3s;
+}
+.appTornado:before{
+  content: '';
+  background: url('https://c4.wallpaperflare.com/wallpaper/861/460/13/field-weather-dust-stormy-wallpaper-preview.jpg') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* z-index: -1; */
+}
+
+@keyframes fadeInTornado {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeInTornado {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
