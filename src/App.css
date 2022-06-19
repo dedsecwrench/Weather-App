@@ -326,13 +326,13 @@ input[type=text]:focus{
 }
 .appSnow:before{
   content: '';
-  background: url('https://mobimg.b-cdn.net/v3/fetch/5a/5a52912d498887cdb644b89fabfe4872.jpeg') no-repeat center center/cover;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Snow_packed_trees.jpg/1200px-Snow_packed_trees.jpg') no-repeat center center/cover;
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  /* z-index: -1; */
+  z-index: -1;
 }
 
 @keyframes fadeInsnow {
