@@ -70,7 +70,7 @@ const Weather = () => {
   // console.log(result);
 
   return (
-    <div className={result}>
+    <div className={result} id="page">
 
     <div className='main flex flex-wrap'>
         
@@ -101,7 +101,7 @@ const Weather = () => {
             <div className='search w-1/3'>
 
                 <div className='top relative'>
-                <input className='' type="text" value={location} onChange={ e => setLocation(e.target.value) } placeholder="Enter Location" />
+                <input className='' type="text" value={location} onChange={ e => setLocation(e.target.value) } placeholder="Enter Location" spellCheck="false" />
                 <button className=' searchicon' onClick={(e)=>searchLocation(e)} >
                 <svg className=" h-11 w-11 text-white relative left-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
