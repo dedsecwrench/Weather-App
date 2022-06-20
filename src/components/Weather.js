@@ -72,23 +72,22 @@ const Weather = () => {
   return (
     <div className={result}>
 
-    <div className='main'>
+    <div className='main flex flex-wrap'>
         
-            <div className='display relative'>
-                <h2 className='mt-6 ml-12 text-xl bold'>Weather</h2>     
+            <div className='display relative ' >
+                <h2 className='mt-6 ml-12 text-xl bold main-text'>Weather</h2>     
 
                 {typeof data.main != "undefined" ? 
-                ( <div className=' ml-12 absolute bottom-20 flex'>
-                    <div className='temp '>
-                        <h2 className='bold text-9xl pr-2'>{Math.round(data.main.temp)}°<span className='cel'>C</span></h2>
+                ( <div className=' ml-12 absolute bottom-20 box'>
+                    <div className='temp'>
+                        <h2 className='bold text-9xl pr-2 cel-num'>{Math.round(data.main.temp)}°<span className='cel '>C</span></h2>
                     </div>
 
-                    <div className='location mt-9 pl-1 '>
+                    <div className='location mt-9 pl-1'>
                     <span className='bold pl-1 date'>{dateBuilder(new Date)}</span><br/>
-                        <span className='text-6xl'>{data.name}</span>
-             
+                        <span className='text-6xl data-name'>{data.name}</span>
                     </div>
-                    <div className=''>
+                    <div className='d'>
                         <div className='description pl-6 relative'>
                             <span><img className='img' src={`http://openweathermap.org/img/wn/${data.weather[0].icon}.png`} alt=""/></span> <br/>
                             <span className='absolute bold des '>{data.weather[0].main}</span>
@@ -110,8 +109,8 @@ const Weather = () => {
                 </div>
               
                 <div className='bottom'>
-                    <h3 className='bold text-2xl mb-5 '>Weather Details</h3>
-                   <>   
+                    <h3 className='bold text-2xl mb-5 detail'>Weather Details</h3>
+                   <div className='contain1'>   
                     <div className='feels mb-4 h-20 '>
                         <p>Feels like</p>
                       <p> {typeof data.main != "undefined" ? 
@@ -137,12 +136,11 @@ const Weather = () => {
                         {typeof data.main != "undefined" ? 
                     (<span className='bold text-xl'>{data.weather[0].description}</span>):('')}
                     </div>
-                    </> 
+                    </div> 
 
             </div>
             </div>
     </div>
-
 
     </div>
   )

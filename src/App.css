@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap');
 
-
 body {
   margin: 0;
   font-family: Outfit, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -159,7 +158,10 @@ input[type=text]:focus{
   color: #fff;
   animation: fadeIncloud 3s;
 }
+/* clouds */
 /* https://i.redd.it/tg3jnc0hdxj41.jpg */
+/* snow */
+/* https://cff2.earth.com/uploads/2017/12/05231550/Climate-change-could-increase-the-frequency-of-severe-ice-storms.jpg */
 .appClouds:before{
   content: '';
   background: url('https://i.redd.it/tg3jnc0hdxj41.jpg') no-repeat center center/cover;
@@ -168,7 +170,7 @@ input[type=text]:focus{
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 0;
+  /* z-index: -1; */
 }
 
 @keyframes fadeIncloud {
@@ -325,6 +327,8 @@ input[type=text]:focus{
   color: #fff;
   animation: fadeInsnow 3s;
 }
+/* https://wallpapercave.com/wp/wp3568180.jpg */
+/* https://wallpaperstock.net/wallpapers/thumbs1/42514wide.jpg */
 .appSnow:before{
   content: '';
   background: url('https://wallpapercave.com/wp/wp3568180.jpg') no-repeat center center/cover;
@@ -333,7 +337,7 @@ input[type=text]:focus{
   height: 100%;
   top: 0;
   left: 0;
-/*   z-index: -1; */
+  /* z-index: -1; */
 }
 
 @keyframes fadeInsnow {
@@ -514,4 +518,109 @@ input[type=text]:focus{
   to {
     opacity: 1;
   }
+}
+
+.contain{
+  display: none;
+}
+.box{
+  display: flex;
+}
+@media only screen and (max-width: 600px) and (min-width: 400px) {
+
+  input[type=text]{
+    /* color: black; */
+    position: relative;
+    width: 360px;
+    height: 75px;
+    background-color: transparent;
+    border-bottom: none;
+    /* border: 1px solid red; */
+    font-size: 23px;
+  }
+  input[type=text]:focus{
+    box-shadow: none;
+    outline: none;
+    /* border-bottom: white; */
+    border-bottom: none;
+  }
+    .display{
+      position: absolute;
+      /* bottom: 100px; */
+      /* top: 118px; */
+      height: 100%;
+      /* background-color: black; */
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      -webkit-backdrop-filter: blur(1px);
+      backdrop-filter: blur(1px);
+    }
+    .temp{
+      margin-top:2rem ;
+    }
+    .d{
+      position: absolute;
+      /* top: 10rem; */
+      bottom: 12rem;
+      margin-left: 0.3rem;
+    }
+    .box{
+      flex-direction: column;
+      justify-content: space-around;
+      margin-left: 3rem;
+      padding-bottom: 14.5rem;
+    }
+    .date{
+      position: absolute;
+      top: 0;
+      font-size: 1.1rem;
+    }
+    .data-name{
+      font-size: 4.5rem;
+      position: absolute;
+      bottom: 13.8rem;
+      margin-left: 0.3rem;
+    }
+    .description{
+      padding: 0;
+      margin: 0;
+    }
+
+    .cel-num{
+      padding: 0;
+      margin: 0;
+      font-size: 10rem;
+    }
+    .cel{
+      font-size: 8rem;
+    }
+
+    .main-text{
+     display: none;
+    }
+    .detail{
+      display: none;
+    }
+    .search{
+      width: 100%;
+      height: 10.2%;
+      position: sticky;
+      top: 0;
+      margin-left: 0;
+    }
+    .feels,.humidity,.wind{
+      display: flex;
+      margin-bottom: 0;
+      height: 20px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .contain1{
+      /* margin: 1rem; */
+      display: none;
+    } 
+
 }
